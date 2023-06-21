@@ -1,0 +1,417 @@
+{
+  "id": "8CXH",
+  "entry_info": {
+    "audit_author": [
+      {
+        "name": "Liu, W.",
+        "pdbx_ordinal": 1
+      },
+      {
+        "name": "Zhang, X.K.",
+        "pdbx_ordinal": 2
+      },
+      {
+        "name": "Gong, D.Y.",
+        "pdbx_ordinal": 3
+      },
+      {
+        "name": "Dai, X.H.",
+        "pdbx_ordinal": 4
+      },
+      {
+        "name": "Sharma, A.",
+        "pdbx_ordinal": 5
+      },
+      {
+        "name": "Zhang, T.H.",
+        "pdbx_ordinal": 6
+      },
+      {
+        "name": "Rey, F.",
+        "pdbx_ordinal": 7
+      },
+      {
+        "name": "Zhou, Z.H.",
+        "pdbx_ordinal": 8
+      }
+    ],
+    "citation": [
+      {
+        "id": "primary",
+        "journal_abbrev": "To Be Published",
+        "journal_id_csd": "0353",
+        "rcsb_authors": [
+          "Liu, W.",
+          "Zhang, X.K.",
+          "Gong, D.Y.",
+          "Dai, X.H.",
+          "Sharma, A.",
+          "Zhang, T.H.",
+          "Rey, F.",
+          "Zhou, Z.H."
+        ],
+        "rcsb_is_primary": "Y",
+        "rcsb_journal_abbrev": "To be published",
+        "title": "Structures of Zika Virus in Complex with Antibodies Targeting E Dimer Epitopes and Basis for Neutralization Efficacy"
+      }
+    ],
+    "em3d_fitting": [
+      {
+        "id": "1"
+      }
+    ],
+    "em3d_reconstruction": [
+      {
+        "id": "1",
+        "image_processing_id": "1",
+        "num_particles": 1094250,
+        "resolution": 3.2,
+        "resolution_method": "FSC 0.143 CUT-OFF",
+        "symmetry_type": "POINT"
+      }
+    ],
+    "em_ctf_correction": [
+      {
+        "em_image_processing_id": "1",
+        "id": "1",
+        "type": "PHASE FLIPPING AND AMPLITUDE CORRECTION"
+      }
+    ],
+    "em_entity_assembly": [
+      {
+        "entity_id_list": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "id": "1",
+        "name": "Zika virus",
+        "parent_id": 0,
+        "source": "MULTIPLE SOURCES",
+        "type": "VIRUS"
+      }
+    ],
+    "em_experiment": {
+      "aggregation_state": "PARTICLE",
+      "entity_assembly_id": "1",
+      "id": "1",
+      "reconstruction_method": "SINGLE PARTICLE"
+    },
+    "em_image_recording": [
+      {
+        "avg_electron_dose_per_image": 26,
+        "film_or_detector_model": "GATAN K2 SUMMIT (4k x 4k)",
+        "id": "1",
+        "imaging_id": "1"
+      }
+    ],
+    "em_imaging": [
+      {
+        "accelerating_voltage": 300,
+        "electron_source": "FIELD EMISSION GUN",
+        "id": "1",
+        "illumination_mode": "FLOOD BEAM",
+        "microscope_model": "FEI TITAN KRIOS",
+        "mode": "BRIGHT FIELD",
+        "nominal_defocus_max": 4000,
+        "nominal_defocus_min": 1000,
+        "specimen_id": "1"
+      }
+    ],
+    "em_software": [
+      {
+        "category": "PARTICLE SELECTION",
+        "id": "1",
+        "image_processing_id": "1"
+      },
+      {
+        "category": "IMAGE ACQUISITION",
+        "id": "2",
+        "imaging_id": "1"
+      },
+      {
+        "category": "MASKING",
+        "id": "3"
+      },
+      {
+        "category": "CTF CORRECTION",
+        "id": "4",
+        "image_processing_id": "1"
+      },
+      {
+        "category": "LAYERLINE INDEXING",
+        "id": "5"
+      },
+      {
+        "category": "DIFFRACTION INDEXING",
+        "id": "6"
+      },
+      {
+        "category": "MODEL FITTING",
+        "id": "7"
+      },
+      {
+        "category": "MODEL REFINEMENT",
+        "id": "8"
+      },
+      {
+        "category": "OTHER",
+        "id": "9"
+      },
+      {
+        "category": "INITIAL EULER ASSIGNMENT",
+        "id": "10",
+        "image_processing_id": "1"
+      },
+      {
+        "category": "FINAL EULER ASSIGNMENT",
+        "id": "11",
+        "image_processing_id": "1"
+      },
+      {
+        "category": "CLASSIFICATION",
+        "id": "12",
+        "image_processing_id": "1"
+      },
+      {
+        "category": "RECONSTRUCTION",
+        "id": "13",
+        "image_processing_id": "1"
+      }
+    ],
+    "em_specimen": [
+      {
+        "embedding_applied": "NO",
+        "experiment_id": "1",
+        "id": "1",
+        "shadowing_applied": "NO",
+        "staining_applied": "NO",
+        "vitrification_applied": "YES"
+      }
+    ],
+    "em_vitrification": [
+      {
+        "cryogen_name": "ETHANE",
+        "id": "1",
+        "specimen_id": "1"
+      }
+    ],
+    "entry": {
+      "id": "8CXH"
+    },
+    "exptl": [
+      {
+        "method": "ELECTRON MICROSCOPY"
+      }
+    ],
+    "pdbx_audit_revision_details": [
+      {
+        "data_content_type": "Structure model",
+        "ordinal": 1,
+        "provider": "repository",
+        "revision_ordinal": 1,
+        "type": "Initial release"
+      }
+    ],
+    "pdbx_audit_revision_history": [
+      {
+        "data_content_type": "Structure model",
+        "major_revision": 1,
+        "minor_revision": 0,
+        "ordinal": 1,
+        "revision_date": "2023-06-07T00:00:00+0000"
+      }
+    ],
+    "pdbx_audit_support": [
+      {
+        "country": "United States",
+        "funding_organization": "National Institutes of Health/National Institute of Dental and Craniofacial Research (NIH/NIDCR)",
+        "grant_number": "DE028583, DE025567",
+        "ordinal": 1
+      },
+      {
+        "country": "United States",
+        "funding_organization": "National Institutes of Health/National Institute Of Allergy and Infectious Diseases (NIH/NIAID)",
+        "grant_number": "1S10RR23057, 1S10OD018111, and 1U24GM116792",
+        "ordinal": 2
+      },
+      {
+        "country": "United States",
+        "funding_organization": "National Science Foundation (NSF, United States)",
+        "grant_number": "DBI-1338135 and DMR-1548924",
+        "ordinal": 3
+      }
+    ],
+    "pdbx_database_related": [
+      {
+        "content_type": "associated EM volume",
+        "db_id": "EMD-27056",
+        "db_name": "EMDB",
+        "details": "Structures of Zika Virus in Complex with Antibodies Targeting E Dimer Epitopes and Basis for Neutralization Efficacy"
+      }
+    ],
+    "pdbx_database_status": {
+      "deposit_site": "RCSB",
+      "pdb_format_compatible": "N",
+      "process_site": "RCSB",
+      "recvd_initial_deposition_date": "2022-05-21T00:00:00+0000",
+      "status_code": "REL",
+      "sgentry": "N"
+    },
+    "rcsb_accession_info": {
+      "deposit_date": "2022-05-21T00:00:00+0000",
+      "has_released_experimental_data": "Y",
+      "initial_release_date": "2023-06-07T00:00:00+0000",
+      "major_revision": 1,
+      "minor_revision": 0,
+      "revision_date": "2023-06-07T00:00:00+0000",
+      "status_code": "REL"
+    },
+    "rcsb_entry_container_identifiers": {
+      "assembly_ids": [
+        "1"
+      ],
+      "emdb_ids": [
+        "EMD-27056"
+      ],
+      "entity_ids": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "entry_id": "8CXH",
+      "model_ids": [
+        1
+      ],
+      "polymer_entity_ids": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "rcsb_id": "8CXH"
+    },
+    "rcsb_entry_info": {
+      "assembly_count": 1,
+      "branched_entity_count": 0,
+      "cis_peptide_count": 0,
+      "deposited_atom_count": 16634,
+      "deposited_hydrogen_atom_count": 0,
+      "deposited_model_count": 1,
+      "deposited_modeled_polymer_monomer_count": 2178,
+      "deposited_nonpolymer_entity_instance_count": 0,
+      "deposited_polymer_entity_instance_count": 10,
+      "deposited_polymer_monomer_count": 12662,
+      "deposited_solvent_atom_count": 0,
+      "deposited_unmodeled_polymer_monomer_count": 10484,
+      "disulfide_bond_count": 16,
+      "entity_count": 4,
+      "experimental_method": "EM",
+      "experimental_method_count": 1,
+      "inter_mol_covalent_bond_count": 0,
+      "inter_mol_metalic_bond_count": 0,
+      "molecular_weight": 1398.78,
+      "na_polymer_entity_types": "Other",
+      "nonpolymer_entity_count": 0,
+      "polymer_composition": "heteromeric protein",
+      "polymer_entity_count": 4,
+      "polymer_entity_count_dna": 0,
+      "polymer_entity_count_rna": 0,
+      "polymer_entity_count_nucleic_acid": 0,
+      "polymer_entity_count_nucleic_acid_hybrid": 0,
+      "polymer_entity_count_protein": 4,
+      "polymer_entity_taxonomy_count": 4,
+      "polymer_molecular_weight_maximum": 379.6,
+      "polymer_molecular_weight_minimum": 11.43,
+      "polymer_monomer_count_maximum": 3423,
+      "polymer_monomer_count_minimum": 110,
+      "resolution_combined": [
+        3.2
+      ],
+      "selected_polymer_entity_types": "Protein (only)",
+      "software_programs_combined": [
+        "PHENIX"
+      ],
+      "solvent_entity_count": 0,
+      "structure_determination_methodology": "experimental",
+      "structure_determination_methodology_priority": 10
+    },
+    "rcsb_primary_citation": {
+      "id": "primary",
+      "journal_abbrev": "To Be Published",
+      "journal_id_csd": "0353",
+      "rcsb_orcididentifiers": [
+        "?",
+        "?",
+        "?",
+        "?",
+        "?",
+        "?",
+        "?",
+        "?"
+      ],
+      "rcsb_authors": [
+        "Liu, W.",
+        "Zhang, X.K.",
+        "Gong, D.Y.",
+        "Dai, X.H.",
+        "Sharma, A.",
+        "Zhang, T.H.",
+        "Rey, F.",
+        "Zhou, Z.H."
+      ],
+      "rcsb_journal_abbrev": "To be published",
+      "title": "Structures of Zika Virus in Complex with Antibodies Targeting E Dimer Epitopes and Basis for Neutralization Efficacy"
+    },
+    "refine_ls_restr": [
+      {
+        "dev_ideal": 0.007,
+        "number": 17012,
+        "pdbx_refine_id": "ELECTRON MICROSCOPY",
+        "type": "f_bond_d"
+      },
+      {
+        "dev_ideal": 0.788,
+        "number": 23058,
+        "pdbx_refine_id": "ELECTRON MICROSCOPY",
+        "type": "f_angle_d"
+      },
+      {
+        "dev_ideal": 16.415,
+        "number": 10025,
+        "pdbx_refine_id": "ELECTRON MICROSCOPY",
+        "type": "f_dihedral_angle_d"
+      },
+      {
+        "dev_ideal": 0.048,
+        "number": 2579,
+        "pdbx_refine_id": "ELECTRON MICROSCOPY",
+        "type": "f_chiral_restr"
+      },
+      {
+        "dev_ideal": 0.005,
+        "number": 2918,
+        "pdbx_refine_id": "ELECTRON MICROSCOPY",
+        "type": "f_plane_restr"
+      }
+    ],
+    "struct": {
+      "pdbx_caspflag": "N",
+      "title": "Structures of Zika Virus in Complex with Antibodies Targeting E Dimer Epitopes and Basis for Neutralization Efficacy"
+    },
+    "struct_keywords": {
+      "pdbx_keywords": "VIRUS/IMMUNE SYSTEM",
+      "text": "ZIKV, scFv antibody, VIRUS-IMMUNE SYSTEM complex"
+    },
+    "rcsb_id": "8CXH",
+    "rcsb_external_references": [
+      {
+        "id": "EMD-27056",
+        "type": "EM DATA RESOURCE",
+        "link": "https://www.emdataresource.org/EMD-27056"
+      }
+    ]
+  }
+}
