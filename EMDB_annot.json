@@ -1,0 +1,31 @@
+{
+  "emdb_id": "EMD-27056",
+  "macromolecules": {
+    "m4": {
+      "type": "protein",
+      "annotations": {
+        "ALPHAFOLDDB": [
+          {
+            "method": "AlphaFold DB",
+            "id": "P01706"
+          }
+        ],
+        "UNIPROT": [
+          {
+            "method": "UniProt",
+            "id": "P01706"
+          }
+        ]
+      }
+    }
+  },
+  "supramolecules": {},
+  "annotations": {
+    "PDB": [
+      {
+        "method": "AUTHOR",
+        "id": "8cxh"
+      }
+    ]
+  }
+}
