@@ -10,6 +10,12 @@ type Entry = {
 
 interface MyData {
   root: Entry[];
+};
+
+interface Annotation {
+  method: string;
+  id: string;
+  title?: string;
 }
 
 async function fetchAdditionalData(kind: string, code: string) {
@@ -74,7 +80,8 @@ async function fetchAdditionalData(kind: string, code: string) {
 
 function DataTree() {
   const [state, setState] = useState<MyData | undefined>();
-  const [detail, setDetail] = useState<any>();
+  const [detail, setDetail] = useState<any>(null);
+  const [selectedPDB, setSelectedPDB] = useState<string | null>(null);
 
   useEffect(() => {
     fetch('http://localhost:8000/data')
@@ -85,7 +92,7 @@ function DataTree() {
   if (!state) return <div>Loading...</div>;
 
   const handleCodeChange = (index: number, code: string) => {
-    setState((prevState) => {
+    setState((prevState: MyData | undefined) => {
       if (prevState) {
         const updatedRoot = [...prevState.root];
         updatedRoot[index] = {
@@ -100,7 +107,7 @@ function DataTree() {
     });
   };
 
-  const handleFetchData = async (index: number) => {
+  const handleFetchData = async (index: number) => {    
     if (state && state.root[index]) {
       const { kind, code } = state.root[index];
       const data = await fetchAdditionalData(kind, code);
@@ -120,7 +127,7 @@ function DataTree() {
           {entry.kind}:{' '}
           <input
             type="text"
-            placeholder='Code without Prefix'
+            placeholder="Code without Prefix"
             value={entry.code}
             onChange={(e) => handleCodeChange(index, e.target.value)}
             onKeyPress={(e) => handleKeyPress(e, index)}
@@ -130,9 +137,56 @@ function DataTree() {
       ))}
       <h5>Detail</h5>
       <div style={{ whiteSpace: 'pre' }}>{JSON.stringify(detail, undefined, 2)}</div>
+      {detail && detail.annotations && (
+        <div>
+          <h5>Annotations</h5>
+          <ul>    
+            {/* PDB and UNIPROT are valid for EMDB JSON */}                    
+            {detail.annotations.PDB && (
+              <li>                
+                PDB:
+                {detail.annotations.PDB.map((annotation: any) => ( 
+                  <button key={annotation.id} onClick={() => setSelectedPDB(annotation.id)} className={selectedPDB === annotation.id ? "selected" : ""}>
+                    {annotation.id}
+                  </button>
+                ))}
+              </li>
+            )}
+            {detail.macromolecules && detail.macromolecules.m4 && detail.macromolecules.m4.annotations && detail.macromolecules.m4.annotations.UNIPROT && (
+              <li>
+                UNIPROT:
+                {detail.macromolecules.m4.annotations.UNIPROT.map((annotation: any) => (
+                  <button key={annotation.id} onClick={() => console.log(annotation.id)}>
+                    {annotation.id}
+                  </button>
+                ))}
+              </li>
+            )}
+            {/* For PDB JSON there are EMDB IDs,  */}
+      {detail.entry_info && (
+        <div>
+          <h5>Annotations</h5>
+          <ul>
+            {detail.entry_info.id && (
+              <li>
+                EMDB:
+                {detail.entry_info.id.map((annotation: any) => (
+                  <button key={annotation.id} onClick={() => console.log(annotation.id)}>
+                    {annotation.id}
+                  </button>
+                ))}
+              </li>
+            )}
+          </ul>
+        </div>
+      )}                               
+          </ul>
+        </div>
+      )}
     </div>
   );
-}
+  
+                  }  
 
 function App() {
   return (
